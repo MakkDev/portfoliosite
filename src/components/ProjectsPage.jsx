@@ -13,9 +13,10 @@ export default function ProjectsPage(props) {
 const { ref: ProjectsRef, inView: projectsVisible, } = useInView();
    
     return (
-        <Container ref={ProjectsRef} sx={{display: "flex", justifyContent: "center", mt: "5%", flexDirection: "column", alignItems: "center", visibility: projectsVisible ? "unset" : "hidden" }}>           
-            <Zoom left > <Typography sx={{mb:"5%", fontFamily:"Cormorant, serif", fontWeight:"600",}} variant='h1'> Projects</Typography> </Zoom>
-            <Box ref={props.refProp} sx={{display:"flex", alignItems:"center", mb:"10%", }}> 
+         
+        <Container ref={ProjectsRef} sx={{display: "flex", justifyContent: "center", mt: "10%", flexDirection: "column", alignItems: "center", visibility: projectsVisible ? "unset" : "hidden" }}>           
+            <Zoom left > <Typography ref={props.refProp2} sx={{mb:"5%", fontFamily:"Cormorant, serif", fontWeight:"600",}} variant='h1'> Projects</Typography> </Zoom>
+            <Box sx={{display:"flex", alignItems:"center", mb:"10%", }}> 
             <Grid sx={{ display: "flex", justifyContent: "center", alignItems: "center" }} container spacing={9}>
                 <Grid sx={{ display: "flex", flexDirection: "column", alignItems: "center" }} item xs={6}>
                         <motion.div whileHover={{scale: 1.15}}>
@@ -44,8 +45,8 @@ const { ref: ProjectsRef, inView: projectsVisible, } = useInView();
                                 </Box>
                             </Stack>
                             <Box sx={{display:"flex", justifyContent:"space-around",}}> 
-                            <Button sx={{color:"#dae0e0", backgroundColor:"#06000C"}} variant='contained'> Live Demo </Button>
-                            <Button sx={{color:"#06000C", backgroundColor:"#dae0e0", borderColor:"#06000C"}} variant='outlined'> View Code </Button>
+                            <Button size='large' sx={{fontFamily:"Montserrat" , fontWeight:"600", ml:"2%", color:"#dae0e0", backgroundColor:"#020004", borderColor:"#dae0e0", "&:hover": {color:"#06000C", backgroundImage: "linear-gradient(to right, #D9BFE6, #B380CC, #8C40B3  )"}}} variant='contained' > Live Demo </Button>
+                            <Button size='large' sx={{fontFamily:"Montserrat" ,fontWeight:"600", mr:"2%",color:"#06000C", backgroundColor:"#dae0e0", borderColor:"#020004", "&:hover": { backgroundImage: "linear-gradient(to right, #D9BFE6, #B380CC, #8C40B3  )"}}} variant='contained'>View Code</Button>
                             </Box> 
                        </CardContent>
                     </Card>
@@ -80,8 +81,8 @@ const { ref: ProjectsRef, inView: projectsVisible, } = useInView();
                                 </Box>
                             </Stack>
                             <Box sx={{display:"flex", justifyContent:"space-around",}}> 
-                            <Button sx={{color:"#dae0e0", backgroundColor:"#06000C"}} variant='contained'> Live Demo </Button>
-                            <Button sx={{color:"#06000C", backgroundColor:"#dae0e0", borderColor:"#06000C"}} variant='outlined'> View Code </Button>
+                            <Button size='large' sx={{fontFamily:"Montserrat" , fontWeight:"600", ml:"2%", color:"#dae0e0", backgroundColor:"#020004", borderColor:"#dae0e0", "&:hover": {color:"#06000C", backgroundImage: "linear-gradient(to right, #D9BFE6, #B380CC, #8C40B3  )"}}} variant='contained' > Live Demo </Button>
+                            <Button size='large' sx={{fontFamily:"Montserrat" ,fontWeight:"600", mr:"2%",color:"#06000C", backgroundColor:"#dae0e0", borderColor:"#020004", "&:hover": { backgroundImage: "linear-gradient(to right, #D9BFE6, #B380CC, #8C40B3  )"}}} variant='contained'>View Code</Button>
                             </Box> 
                        </CardContent>
                     </Card>
