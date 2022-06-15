@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, Box, Typography, Paper, Card, Stack, Grid} from '@mui/material'
+import {Container, Box, Typography, Paper, Card, Stack, Grid, useMediaQuery} from '@mui/material'
 import LightSpeed from 'react-reveal/LightSpeed';
 import Zoom from 'react-reveal/Zoom';
 import {motion} from "framer-motion";
@@ -10,13 +10,13 @@ export default function SkillsPage(props) {
 
      const { ref: SkillsRef, inView: skillsVisible, } = useInView();
      const { ref: SkillsImgRef, inView: skillsImgVisible, } = useInView();
+     const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("sm"));
 
   return (
       <> 
-      <Box ref={props.refProp}> 
-        <Box ref={SkillsRef} sx={{mt:"10%",width:"100%", display:'flex', flexDirection:"column", justifyContent:"center", alignItems:"center", visibility: skillsVisible ? "unset" : "hidden"}}>
-         
-        <Typography sx={{mb:"4%",display:"flex", justifyContent:"center", fontFamily:"Cormorant, serif", fontWeight:"600", textAlign:"center"}} variant="h1" >
+      <Box ref={props.refProp}></Box> 
+        <Box ref={SkillsRef} sx={{mt:"28%", width:"100%", display:'flex', flexDirection:"column", justifyContent:"center", alignItems:"center", visibility: skillsVisible ? "unset" : "hidden"}}>   
+        <Typography sx={{mb:"4%",display:"flex", justifyContent:"center", fontFamily:"Cormorant, serif", fontWeight:"600", textAlign:"center"}} variant={isSmallScreen ? 'h2' : 'h1'} >
              <Zoom left> 
                 Skills & Technologies
             </Zoom> </Typography> 
@@ -78,7 +78,7 @@ export default function SkillsPage(props) {
     </LightSpeed> 
     </Box>
     </Box>
-    </Box>
+    
     </>
   )
 }
