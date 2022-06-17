@@ -10,7 +10,7 @@ const theme = createTheme({
       fontFamily:"Montserrat", fontWeight:"600", fontSize:"10px", textAlign:"center"  
     },
     h7: {
-      fontFamily:"Montserrat", fontWeight:"600", fontSize:"15px", textAlign:"center"  
+      fontFamily:"Montserrat", fontWeight:"600", fontSize:"14px",  
     },
     h6: {
       fontFamily:"Montserrat", fontWeight:"600",  
