@@ -4,6 +4,16 @@ import LightSpeed from 'react-reveal/LightSpeed';
 import Zoom from 'react-reveal/Zoom';
 import {motion} from "framer-motion";
 import { useInView } from 'react-intersection-observer';
+import GitLogo from '../images/GitLogo.png';
+import ReactLogo from '../images/ReactLogo.png';
+import MUILogo from '../images/MUILogo.png';
+import JavascriptLogo from '../images/JavascriptLogo.png';
+import FireBaseLogo from '../images/FireBaseLogo.png';
+import NetlifyLogo from '../images/NetlifyLogo.png';
+import HTMLLogo from '../images/HTMLLogo.png';
+import CSSLogo from '../images/CSSLogo.png';
+import CanvaLogo from '../images/CanvaLogo.png';
+
 
 
 export default function SkillsPage(props) {
@@ -29,49 +39,55 @@ export default function SkillsPage(props) {
              <Grid sx={{display:"flex", flexDirection:"column", alignItems:"center"}} item xs={4}>
                     <Typography variant={isSmallScreen ? 'h5' :'h4'}> <Zoom left > HTML </Zoom> </Typography>
                     <Box sx={{"&:hover" : {filter: "drop-shadow(0 0 0.5rem black)"}}}>  
-                    <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width: isSmallScreen ? "70px" : "100px", cursor:"pointer"}} src='https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png'/>
+                    <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width: isSmallScreen ? "70px" : "100px", cursor:"pointer"}} src={HTMLLogo}/>
                     </Box>
                </Grid> 
                 <Grid sx={{display:"flex", flexDirection:"column", alignItems:"center"}} item xs={4}> 
                     <Typography variant={isSmallScreen ? 'h5' :'h4'}> <Zoom left > CSS </Zoom> </Typography>
                     <Box sx={{"&:hover" : {filter: "drop-shadow(0 0 0.5rem black)"}}}> 
-                    <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width:isSmallScreen ? "70px" : "100px", cursor:"pointer", "&:hover" : {filter: "drop-shadow(0 0 0.5rem black)"}}} src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png'/>
+                    <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width:isSmallScreen ? "70px" : "100px", cursor:"pointer", "&:hover" : {filter: "drop-shadow(0 0 0.5rem black)"}}} src={CSSLogo}/>
                     </Box>  
                </Grid> 
                 <Grid sx={{display:"flex", flexDirection:"column", alignItems:"center"}} item xs={4}>
                     <Typography variant={isSmallScreen ? 'h5' :'h4'}> <Zoom left > JavaScript </Zoom></Typography>
                     <Box sx={{"&:hover" : {filter: "drop-shadow(0 0 0.5rem black)"}}}>
-                    <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width:isSmallScreen ? "70px" : "100px", cursor:"pointer"}} src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png'/>  
+                    <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width:isSmallScreen ? "70px" : "100px", cursor:"pointer"}} src={JavascriptLogo}/>  
                     </Box>
                </Grid> 
                 <Grid sx={{display:"flex", flexDirection:"column", alignItems:"center"}} item xs={4}>
                     <Typography variant={isSmallScreen ? 'h5' :'h4'}> <Zoom left > Material UI </Zoom> </Typography>
                     <Box sx={{"&:hover" : {filter: "drop-shadow(0 0 0.5rem black)"}}}> 
-                    <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width:isSmallScreen ? "70px" : "100px", cursor:"pointer"}} src='https://media.zeemly.com/media/product/material-ui.png'/>
+                    <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width:isSmallScreen ? "70px" : "100px", cursor:"pointer"}} src={MUILogo}/>
                     </Box>  
                </Grid> 
                 <Grid sx={{display:"flex", flexDirection:"column", alignItems:"center"}} item xs={4}>
                     <Typography variant={isSmallScreen ? 'h5' :'h4'}> <Zoom left > React JS </Zoom> </Typography>
                     <Box sx={{"&:hover" : {filter: "drop-shadow(0 0 0.5rem black)"}}}> 
-                    <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width:isSmallScreen ? "70px" : "100px", cursor:"pointer"}} src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png'/>
+                    <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width:isSmallScreen ? "70px" : "100px", cursor:"pointer"}} src={ReactLogo}/>
                     </Box>  
                </Grid> 
                 <Grid sx={{display:"flex", flexDirection:"column", alignItems:"center"}} item xs={4}>
                     <Typography variant={isSmallScreen ? 'h5' :'h4'}> <Zoom left > Git </Zoom> </Typography>
                     <Box sx={{"&:hover" : {filter: "drop-shadow(0 0 0.5rem black)"}}}>  
-                    <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width:isSmallScreen ? "70px" : "100px", cursor:"pointer"}} src='https://avatars.githubusercontent.com/u/18133?s=200&v=4'/>
+                    <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width:isSmallScreen ? "70px" : "100px", cursor:"pointer"}} src={GitLogo}/>
                     </Box>  
                </Grid> 
-                <Grid sx={{display:"flex", flexDirection:"column", alignItems:"center"}} item xs={6}>
+                <Grid sx={{display:"flex", flexDirection:"column", alignItems:"center"}} item xs={4}>
                     <Typography variant={isSmallScreen ? 'h5' :'h4'}> <Zoom left > Firebase </Zoom> </Typography>
                     <Box sx={{"&:hover" : {filter: "drop-shadow(0 0 0.5rem black)"}}}>  
-                    <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width:isSmallScreen ? "70px" : "100px", cursor:"pointer"}} src='https://cdn-images-1.medium.com/max/1200/1*ti5CnGh_T4Kqy5aCTLJRcg.png'/>
+                    <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width:isSmallScreen ? "70px" : "100px", cursor:"pointer"}} src={FireBaseLogo}/>
                     </Box>  
                </Grid> 
-                <Grid sx={{display:"flex", flexDirection:"column", alignItems:"center"}} item xs={6}>
+                <Grid sx={{display:"flex", flexDirection:"column", alignItems:"center"}} item xs={4}>
                     <Typography variant={isSmallScreen ? 'h5' :'h4'}> <Zoom left > Netlify </Zoom> </Typography>
                     <Box sx={{"&:hover" : {filter: "drop-shadow(0 0 0.5rem black)"}}}>  
-                    <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width:isSmallScreen ? "70px" : "100px", cursor:"pointer"}} src='https://www.netlify.com/v3/img/components/logomark.png'/>
+                    <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width:isSmallScreen ? "70px" : "100px", cursor:"pointer"}} src={NetlifyLogo}/>
+                    </Box>  
+               </Grid>
+                <Grid sx={{display:"flex", flexDirection:"column", alignItems:"center"}} item xs={4}>
+                    <Typography variant={isSmallScreen ? 'h5' :'h4'}> <Zoom left > Canva </Zoom> </Typography>
+                    <Box sx={{"&:hover" : {filter: "drop-shadow(0 0 0.5rem black)"}}}>  
+                    <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width:isSmallScreen ? "70px" : "100px", cursor:"pointer"}} src={CanvaLogo}/>
                     </Box>  
                </Grid>
             </Grid> 
