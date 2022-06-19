@@ -54,8 +54,8 @@ const buttonProps = {
                                 </Box>
                             </Stack>
                             <Box sx={{display:"flex", justifyContent:"space-evenly",}}> 
-                            <Button {...buttonProps} sx={{mr:"7px", fontFamily:"Montserrat" , fontWeight:"600", ml:"2%", color:"#dae0e0", backgroundColor:"#020004", borderColor:"#dae0e0", "&:hover": {color:"#06000C", backgroundImage: "linear-gradient(to right, #D9BFE6, #B380CC, #8C40B3  )"}}} variant='contained' > Live Demo </Button>
-                            <Button {...buttonProps} sx={{fontFamily:"Montserrat" ,fontWeight:"600", mr:"2%",color:"#06000C", backgroundColor:"#dae0e0", borderColor:"#020004", "&:hover": { backgroundImage: "linear-gradient(to right, #D9BFE6, #B380CC, #8C40B3  )"}}} variant='contained'>View Code</Button>
+                            <Button href='https://awesome-golick-803e09.netlify.app/' target="blank" {...buttonProps} sx={{mr:"7px", fontFamily:"Montserrat" , fontWeight:"600", ml:"2%", color:"#dae0e0", backgroundColor:"#020004", borderColor:"#dae0e0", "&:hover": {color:"#06000C", backgroundImage: "linear-gradient(to right, #D9BFE6, #B380CC, #8C40B3  )"}}} variant='contained' > Live Demo </Button>
+                            <Button href='https://github.com/MakkDev/blog' target="blank" {...buttonProps} sx={{fontFamily:"Montserrat" ,fontWeight:"600", mr:"2%",color:"#06000C", backgroundColor:"#dae0e0", borderColor:"#020004", "&:hover": { backgroundImage: "linear-gradient(to right, #D9BFE6, #B380CC, #8C40B3  )"}}} variant='contained'>View Code</Button>
                             </Box> 
                        </CardContent>
                     </Card>
@@ -92,8 +92,8 @@ const buttonProps = {
                                 </Box>
                             </Stack>
                             <Box sx={{display:"flex", justifyContent:"space-around",}}> 
-                            <Button {...buttonProps} sx={{mr:"7px", fontFamily:"Montserrat" , fontWeight:"600", ml:"2%", color:"#dae0e0", backgroundColor:"#020004", borderColor:"#dae0e0", "&:hover": {color:"#06000C", backgroundImage: "linear-gradient(to right, #D9BFE6, #B380CC, #8C40B3  )"}}} variant='contained' > Live Demo </Button>
-                            <Button {...buttonProps} sx={{fontFamily:"Montserrat" ,fontWeight:"600", mr:"2%",color:"#06000C", backgroundColor:"#dae0e0", borderColor:"#020004", "&:hover": { backgroundImage: "linear-gradient(to right, #D9BFE6, #B380CC, #8C40B3  )"}}} variant='contained'>View Code</Button>
+                            <Button href='https://incomparable-mandazi-476d53.netlify.app/' target="blank" {...buttonProps} sx={{mr:"7px", fontFamily:"Montserrat" , fontWeight:"600", ml:"2%", color:"#dae0e0", backgroundColor:"#020004", borderColor:"#dae0e0", "&:hover": {color:"#06000C", backgroundImage: "linear-gradient(to right, #D9BFE6, #B380CC, #8C40B3  )"}}} variant='contained' > Live Demo </Button>
+                            <Button href='https://github.com/MakkDev/Crypto-Tracker' target="blank" {...buttonProps} sx={{fontFamily:"Montserrat" ,fontWeight:"600", mr:"2%",color:"#06000C", backgroundColor:"#dae0e0", borderColor:"#020004", "&:hover": { backgroundImage: "linear-gradient(to right, #D9BFE6, #B380CC, #8C40B3  )"}}} variant='contained'>View Code</Button>
                             </Box> 
                        </CardContent>
                     </Card>
