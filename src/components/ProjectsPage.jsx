@@ -45,9 +45,9 @@ const buttonProps = {
                                         </Grid> 
                                         <Grid item xs={6}>
                                             <List sx={{listStyleType:'disc'}}> 
-                                 <Typography sx={{ display: 'list-item', mb:"6%" }} variant={isSmallScreen ? 'h7': "h6"}>React JS</Typography> 
-                                  <Typography sx={{ display: 'list-item', mb:"6%" }} variant={isSmallScreen ? 'h7': "h6"}>React JS</Typography> 
-                                 <Typography sx={{ display: 'list-item', mb:"6%" }} variant={isSmallScreen ? 'h7': "h6"}>React JS</Typography>             
+                                 <Typography sx={{ display: 'list-item', mb:"6%" }} variant={isSmallScreen ? 'h7': "h6"}>React Hooks</Typography> 
+                                  <Typography sx={{ display: 'list-item', mb:"6%" }} variant={isSmallScreen ? 'h7': "h6"}>React Router</Typography> 
+                                 <Typography sx={{ display: 'list-item', mb:"6%" }} variant={isSmallScreen ? 'h7': "h6"}>Context API</Typography>             
                                         </List>     
                                         </Grid> 
                                     </Grid> 
