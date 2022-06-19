@@ -34,7 +34,7 @@ export default function Header() {
                     <Typography variant='h4' sx={{fontFamily:"Cormorant, serif", mb:{xs:"12%", sm:"8%"}, fontWeight:"700", textAlign:"center", ml:"-15%", display: "flex",  fontSize:{xs:"250%", sm:"320%", md:"320%", lg:"360%", xl:"500%"}, flexDirection:"column",   }} >
                     Junior React JS Developer </Typography>
                     <Typography variant='h4' sx={{fontFamily:"Cormorant, serif", mb:"8%", fontWeight:"700", textAlign:"center", ml:"-15%", display: "flex",  fontSize:{xs:"250%", sm:"320%", md:"320%", lg:"360%", xl:"500%"}, flexDirection:"column",   }} >
-                    UX Design Enthusiast</Typography>
+                    UI Design Enthusiast</Typography>
                             </Rotate>
                         </Grid>
                     </Grid>                
