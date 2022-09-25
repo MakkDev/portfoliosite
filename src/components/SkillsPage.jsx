@@ -13,6 +13,8 @@ import NetlifyLogo from '../images/NetlifyLogo.png';
 import HTMLLogo from '../images/HTMLLogo.png';
 import CSSLogo from '../images/CSSLogo.png';
 import CanvaLogo from '../images/CanvaLogo.png';
+import JestLogo from '../images/JestLogo.png';
+import TSLogo from '../images/TSLogo.png';
 
 
 
@@ -21,7 +23,7 @@ export default function SkillsPage(props) {
      const { ref: SkillsRef, inView: skillsVisible, } = useInView();
      const { ref: SkillsImgRef, inView: skillsImgVisible, } = useInView();
      const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("sm"));
-
+     const skills = [{skillName:"", skillImage:{}}] 
   return (
       <> 
           <Box sx={{mt:"-10%", pt:"-2%"}} ref={props.refProp}></Box>          
@@ -55,15 +57,21 @@ export default function SkillsPage(props) {
                     </Box>
                </Grid> 
                 <Grid sx={{display:"flex", flexDirection:"column", alignItems:"center"}} item xs={4}>
+                    <Typography variant={isSmallScreen ? 'h5' :'h4'}> <Zoom left > React JS </Zoom> </Typography>
+                    <Box sx={{"&:hover" : {filter: "drop-shadow(0 0 0.5rem black)"}}}> 
+                    <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width:isSmallScreen ? "70px" : "100px", cursor:"pointer"}} src={ReactLogo}/>
+                    </Box>  
+               </Grid>
+                <Grid sx={{display:"flex", flexDirection:"column", alignItems:"center"}} item xs={4}>
                     <Typography variant={isSmallScreen ? 'h5' :'h4'}> <Zoom left > Material UI </Zoom> </Typography>
                     <Box sx={{"&:hover" : {filter: "drop-shadow(0 0 0.5rem black)"}}}> 
                     <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width:isSmallScreen ? "70px" : "100px", cursor:"pointer"}} src={MUILogo}/>
                     </Box>  
                </Grid> 
-                <Grid sx={{display:"flex", flexDirection:"column", alignItems:"center"}} item xs={4}>
-                    <Typography variant={isSmallScreen ? 'h5' :'h4'}> <Zoom left > React JS </Zoom> </Typography>
-                    <Box sx={{"&:hover" : {filter: "drop-shadow(0 0 0.5rem black)"}}}> 
-                    <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width:isSmallScreen ? "70px" : "100px", cursor:"pointer"}} src={ReactLogo}/>
+               <Grid sx={{display:"flex", flexDirection:"column", alignItems:"center"}} item xs={4}>
+                    <Typography variant={isSmallScreen ? 'h5' :'h4'}> <Zoom left > TypeScript </Zoom> </Typography>
+                    <Box sx={{"&:hover" : {filter: "drop-shadow(0 0 0.5rem black)"}}}>  
+                    <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width:isSmallScreen ? "70px" : "100px", cursor:"pointer"}} src={TSLogo}/>
                     </Box>  
                </Grid> 
                 <Grid sx={{display:"flex", flexDirection:"column", alignItems:"center"}} item xs={4}>
@@ -77,19 +85,26 @@ export default function SkillsPage(props) {
                     <Box sx={{"&:hover" : {filter: "drop-shadow(0 0 0.5rem black)"}}}>  
                     <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width:isSmallScreen ? "70px" : "100px", cursor:"pointer"}} src={FireBaseLogo}/>
                     </Box>  
+               </Grid>
+               <Grid sx={{display:"flex", flexDirection:"column", alignItems:"center"}} item xs={4}>
+                    <Typography variant={isSmallScreen ? 'h5' :'h4'}> <Zoom left > Jest </Zoom> </Typography>
+                    <Box sx={{"&:hover" : {filter: "drop-shadow(0 0 0.5rem black)"}}}>  
+                    <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width:isSmallScreen ? "80px" : "120px", cursor:"pointer"}} src={JestLogo}/>
+                    </Box>  
                </Grid> 
-                <Grid sx={{display:"flex", flexDirection:"column", alignItems:"center"}} item xs={4}>
+                <Grid sx={{display:"flex", flexDirection:"column", alignItems:"center"}} item xs={6}>
                     <Typography variant={isSmallScreen ? 'h5' :'h4'}> <Zoom left > Netlify </Zoom> </Typography>
                     <Box sx={{"&:hover" : {filter: "drop-shadow(0 0 0.5rem black)"}}}>  
                     <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width:isSmallScreen ? "70px" : "100px", cursor:"pointer"}} src={NetlifyLogo}/>
                     </Box>  
                </Grid>
-                <Grid sx={{display:"flex", flexDirection:"column", alignItems:"center"}} item xs={4}>
+                <Grid sx={{display:"flex", flexDirection:"column", alignItems:"center"}} item xs={6}>
                     <Typography variant={isSmallScreen ? 'h5' :'h4'}> <Zoom left > Canva </Zoom> </Typography>
                     <Box sx={{"&:hover" : {filter: "drop-shadow(0 0 0.5rem black)"}}}>  
                     <motion.img transition={{type:"spring"}} whileHover={{y:10}} style={{marginTop:"1%", width:isSmallScreen ? "70px" : "100px", cursor:"pointer"}} src={CanvaLogo}/>
                     </Box>  
                </Grid>
+                
             </Grid> 
     </LightSpeed> 
     </Box>

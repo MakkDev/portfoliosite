@@ -16,9 +16,12 @@ const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("md"));
 const buttonProps = {
     size: isSmallScreen ? "small" : "large"
   };
-   
+  
+const projects = [{title: "Blockchain Tech Blog", image: blogPic1, skill1: "React Router", skill2: "Context API", liveDemo:"https://awesome-golick-803e09.netlify.app/", viewCode:"https://github.com/MakkDev/blog" },
+{title: "Cryptocurrency Price Tracker", image: cryptoTrackerPic1 , skill1: "Pagination", skill2: "CoinGecko API Integration", liveDemo:"https://incomparable-mandazi-476d53.netlify.app/", viewCode:"https://github.com/MakkDev/Crypto-Tracker" }]
     return (
          <>
+
          <Box ref={props.refProp2} sx={{mb:"5%", pt:"-2%"}}></Box> 
         <Container ref={ProjectsRef} sx={{display: "flex", justifyContent: "center", mt: {xs:"24%", sm:"18%"}, flexDirection: "column", alignItems: "center", visibility: projectsVisible ? "unset" : "hidden" }}>           
             <Zoom left > <Typography  sx={{mb:"10%", fontFamily:"Cormorant, serif", fontWeight:"600",}} variant={isSmallScreen ? 'h2' : 'h1'}> Projects</Typography> </Zoom>
