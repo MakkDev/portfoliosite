@@ -30,9 +30,9 @@ export default function Header() {
                     <Grid sx={{zIndex:"2"}} item xs={6}>
                             <Rotate top > 
                     <Typography ref={TitleRef} variant='h4' sx={{fontFamily:"Cormorant, serif", mb:{xs:"12%", sm:"8%"}, fontWeight:"700", textAlign:"center", ml:"-15%", display: "flex",  fontSize:{xs:"340%", sm:"420%", md:"420%", lg:"490%", xl:"800%"}, flexDirection:"column",   }} >
-                          Abdullah Makkieh </Typography>
+                          Makk Makkieh </Typography>
                     <Typography variant='h4' sx={{fontFamily:"Cormorant, serif", mb:{xs:"12%", sm:"8%"}, fontWeight:"700", textAlign:"center", ml:"-15%", display: "flex",  fontSize:{xs:"250%", sm:"320%", md:"320%", lg:"360%", xl:"500%"}, flexDirection:"column",   }} >
-                    Junior React JS Developer </Typography>
+                     React JS Developer </Typography>
                     <Typography variant='h4' sx={{fontFamily:"Cormorant, serif", mb:"8%", fontWeight:"700", textAlign:"center", ml:"-15%", display: "flex",  fontSize:{xs:"250%", sm:"320%", md:"320%", lg:"360%", xl:"500%"}, flexDirection:"column",   }} >
                     UI Design Enthusiast</Typography>
                             </Rotate>
