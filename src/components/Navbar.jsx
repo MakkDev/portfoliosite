@@ -6,6 +6,7 @@ import makktechblack from '../images/makktechblack.png';
 
 export default function Navbar(props) {
 
+  const executeExperienceScroll = () => (props.refProp4).current.scrollIntoView({behavior: 'smooth'})    
   const executeSkillsScroll = () => (props.refProp).current.scrollIntoView({behavior: 'smooth'})    
   const executeProjectsScroll = () => (props.refProp2).current.scrollIntoView({behavior: 'smooth',})    
   const executeContactScroll = () => (props.refProp3).current.scrollIntoView({behavior: 'smooth'})    
@@ -25,6 +26,9 @@ export default function Navbar(props) {
          <Box onClick={goToTop} sx={{ml: isSmallScreen ? "-2%" : "",width:"100px", cursor:"pointer"}} component="img" src={makktechblack} /></Tooltip>
         <Typography onClick={goToTop} sx={{ fontSize: isSmallScreen ? "100%" : "150%",flex:"1", fontFamily:"Montserrat" ,fontWeight:"600"}}> 
         </Typography>      
+        <Button size={largeAndUp ? "large" : isSmallScreen ? "small" : "medium"} sx={{fontFamily:"Montserrat" ,fontWeight:"600", mr:"2%",color:"#06000C", backgroundColor:"#dae0e0", borderColor:"#06000C", "&:hover": { backgroundImage: "linear-gradient(to right, #D9BFE6, #B380CC, #8C40B3  )"}}} variant='contained' onClick={executeExperienceScroll}> 
+        <Typography sx={{fontFamily:"Montserrat", fontWeight:"600", fontSize: isSmallScreen ? "11.5px" : ""}}>Experience </Typography>
+        </Button>
         <Button size={largeAndUp ? "large" : isSmallScreen ? "small" : "medium"} sx={{fontFamily:"Montserrat" ,fontWeight:"600", mr:"2%",color:"#06000C", backgroundColor:"#dae0e0", borderColor:"#06000C", "&:hover": { backgroundImage: "linear-gradient(to right, #D9BFE6, #B380CC, #8C40B3  )"}}} variant='contained' onClick={executeSkillsScroll}> 
         <Typography sx={{fontFamily:"Montserrat", fontWeight:"600", fontSize: isSmallScreen ? "11.5px" : ""}}>Skills </Typography>
         </Button>
